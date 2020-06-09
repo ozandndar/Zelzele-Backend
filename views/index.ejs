@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Zelzele Api</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://blackrockdigital.github.io/startbootstrap-resume/vendor/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="https://blackrockdigital.github.io/startbootstrap-resume/vendor/fontawesome-free/css/all.min.css"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="https://blackrockdigital.github.io/startbootstrap-resume/css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">ZELZELE API</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+          src="http://www.advanceuk.org/uploaded_files/1365/images/generic-home-scheme-logo.png" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">ANASAYFA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">ENDPOINTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">WEB TESTLERİ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">TEKNOLOJİLER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">VERİ KAYNAĞI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">ZELZELE TEAM</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-6 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">TÜRKİYE Son Depremler - ZELZELE 
+          <span class="text-primary">Api</span>
+        </h1>
+        <!-- <div class="subheading mb-5">Açık Kaynak Kodlu Proje ·
+          <a href="https://github.com/berkekurnaz/Turkiye-Deprem-Api">Kodlara Erişin</a>
+        </div> -->
+        <br><br><br>
+        <p class="lead mb-5">
+          Türkiye'de gerçekleşen son 500 deprem bilgisinin Kandilli Rasathanesi'nin internet sitesinden
+          çekilerek oluşturulmuş rest api servisidir. Veriler json formatında çıktı olarak alınabilir ve
+          üzerlerinde bütün filtreleme işlemleri uygulanabilir.
+          <br /><br />
+          Filteleme özellikleri: başlangıç ve bitiş tarihi, başlangıç ve bitiş saati, enlem aralığı, boylam
+          aralığı, derinlik, buyukluk ve şehir.
+          <br /><br />
+          <!-- <b>Hızlı Kullanım :</b> https://turkiyedepremapi.herokuapp.com/api -->
+        </p>
+        <!-- <div class="social-icons">
+          <a href="https://github.com/berkekurnaz/Turkiye-Deprem-Api">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/berkekurnaz/Turkiye-Deprem-Api">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://github.com/berkekurnaz/Turkiye-Deprem-Api">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://github.com/berkekurnaz/Turkiye-Deprem-Api">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div> -->
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Kullanım</h2>
+
+        <!-- API KULLANIM -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h5 class="mb-0">HIZLI KULLANIM - SON 500 DEPREM BİLGİSİ</h5>
+            <div class="mb-3"><b>Url : </b>/api</div>
+            <p>
+              Türkiye'de gerçekleşen son 500 deprem bilgisini getirir.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Endpoint - 1</span>
+          </div>
+        </div>
+
+        <!-- API KULLANIM -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h5 class="mb-0">BÜYÜKLÜĞÜNE GÖRE DEPREM FİLTRELEME</h5>
+            <div class="mb-3"><b>Url : </b>/api?min=4.2&max=5.0</div>
+            <p>
+              Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz mininum ve maximum büyüklüğe
+              göre depremleri getirir.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Endpoint - 2</span>
+          </div>
+        </div>
+
+        <!-- API KULLANIM -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h5 class="mb-0">TARİHE GÖRE DEPREM FİLTRELEME</h5>
+            <div class="mb-3"><b>Url : </b>/api?tarih=2020.01.26</div>
+            <p>
+              Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz tarihte
+              gerçekleşen depremleri getirir.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Endpoint - 3</span>
+          </div>
+        </div>
+
+        <!-- API KULLANIM -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h5 class="mb-0">SAAT ARALIĞINA GÖRE DEPREM FİLTRELEME</h5>
+            <div class="mb-3"><b>Url : </b>/api?minsaat=16:48:00&maxsaat=17:55:00</div>
+            <p>
+              Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz başlangıç ve bitiş saatlerine
+              göre depremleri getirir.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Endpoint - 4</span>
+          </div>
+        </div>
+
+
+        <!-- API KULLANIM -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h5 class="mb-0">ŞEHRE GÖRE DEPREM FİLTRELEME</h5>
+            <div class="mb-3"><b>Url : </b>/api?sehir=(BALIKESIR)</div>
+            <p>
+              Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz şehre göre depremleri getirir.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Endpoint - 5</span>
+          </div>
+        </div>
+
+        <!-- API KULLANIM -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h5 class="mb-0">DERİNLİĞE GÖRE DEPREM FİLTRELEME</h5>
+            <div class="mb-3"><b>Url : </b>/api?minderinlik=12.5&maxderinlik=15</div>
+            <p>
+              Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz mininum ve maximum derinliğe
+              göre depremleri getirir.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Endpoint - 6</span>
+          </div>
+        </div>
+
+        <!-- API KULLANIM -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h5 class="mb-0">ENLEM ARALIĞINA GÖRE DEPREM FİLTRELEME</h5>
+            <div class="mb-3"><b>Url : </b>/api?minenlem=36.14&maxenlem=38.68</div>
+            <p>
+              Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz enlem aralığına göre
+              depremleri getirir.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Endpoint - 7</span>
+          </div>
+        </div>
+
+        <!-- API KULLANIM -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h5 class="mb-0">BOYLAM ARALIĞINA GÖRE DEPREM FİLTRELEME</h5>
+            <div class="mb-3"><b>Url : </b>/api?minboylam=36.14&boylam=38.68</div>
+            <p>
+              Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz boylam aralığına göre
+              depremleri getirir.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Endpoint - 8</span>
+          </div>
+        </div>
+
+        <!-- API KULLANIM -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h5 class="mb-0">İKİ TARİH ARASINA GÖRE DEPREM FİLTRELEME</h5>
+            <div class="mb-3"><b>Url : </b>/api?baslangic=2020.01.26&bitis=2020.01.27</div>
+            <p>
+              Türkiye'de gerçekleşen son 500 deprem bilgisini arasından istemiş olduğunuz iki tarih arasına göre
+              depremleri getirir.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Endpoint - 9</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">ÖRNEKLER</h2>
+
+        <p>Bu Kısımda Bu Servis Kullanılarak Geliştirilmiş Örnek Uygulamalar Paylaşılacaktır. Eklenmesi
+          planlanan örnekler bir web uygulaması ve bir mobil uygulamadır.</p>
+        <br>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">ÖRNEK 01</h3>
+            <div class="subheading mb-3">TEST ÖRNEĞİ</div>
+            <div>ÖRNEK AÇIKLAMA YAZISI</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">OCAK 2020 - ŞUBAT 2020</span>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">TEKNOLOJİLER</h2>
+
+        <div class="subheading mb-3">PROGRAMLAMA DİLLERİ &amp; ARAÇLAR</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-less"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-gulp"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-grunt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">İŞ AKIŞI</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Kandilli Rasathanesi İnternet Sitesinden Veriler Çekildi.</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cheerio Kütüphanesi İle Gelen Veriler Alındı Ve Ardından Ayrıştırma İşlemi Yapıldı.</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Express.Js Framework'ü İle Rest Api Oluşturulup Veriler Paylaşıldı.</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">VERİ KAYNAĞI</h2>
+        <p>
+          Veriler BOĞAZİÇİ ÜNİVERSİTESİ KANDİLLİ RASATHANESİ VE DEPREM ARAŞTIRMA ENSTİTÜSÜ internet sitesi
+          üzerinden sağlanmaktadır.
+        </p>
+        <p class="mb-0">
+          Verilerin Orijinal İnternet Sitesi Adresi İçin : <a
+            href="http://www.koeri.boun.edu.tr/scripts/lst0.asp">http://www.koeri.boun.edu.tr/scripts/lst0.asp</a>
+        </p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">İLETİŞİM ADRESLERİ</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-user"></i>
+            <b>Geliştirici : </b>Berke Kurnaz
+          </li>
+
+          <li>
+          <li>
+            <i class="fa-li fa fa-user"></i>
+            <b>Github Adresi : </b>www.github.com/berkekurnaz
+          </li>
+          <li>
+            <i class="fa-li fa fa-user"></i>
+            <b>Mail Adresi : </b>contact@berkekurnaz.com
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://blackrockdigital.github.io/startbootstrap-resume/vendor/jquery/jquery.min.js"></script>
+  <script
+    src="https://blackrockdigital.github.io/startbootstrap-resume/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script
+    src="https://blackrockdigital.github.io/startbootstrap-resume/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="https://blackrockdigital.github.io/startbootstrap-resume/js/resume.min.js"></script>
+
+</body>
+
+</html>
